@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('exercise.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the whole background */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    width: 100%; /* Take full width */
+    max-width: 400px; /* Limit max width */
+    background: #d6bbf1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+input[type="text"], 
+input[type="number"], 
+button {
+    width: 100%; /* Make inputs and button take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0; /* Add space between elements */
+    font-size: 16px; /* Consistent font size */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Space above the list */
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between; /* Align items in the list */
+    align-items: center; /* Center items vertically */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.timer {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    padding: 5px; /* Make delete button consistent with others */
+}
